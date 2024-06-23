@@ -42,11 +42,13 @@ function detectObjects() {
     }
 
     for (let i = 0; i < data.length; i += 4) {
-        data[i] = binaryData[i / 4];    
-        data[i + 1] = binaryData[i / 4]; 
-        data[i + 2] = binaryData[i / 4]; 
-    }
+        if (binaryData[i / 4] === 255) {  
+            data[i] = 0;  
+            data[i + 1] = 255;  
+            data[i + 2] = 0;  
 
+        }
+    }
     ctx.putImageData(imgData, 0, 0);
 }
 
