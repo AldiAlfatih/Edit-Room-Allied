@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah ke Citra Negatif - Photoshop Lite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EDIT ROOM ALLIED - Ubah ke Citra Negatif</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kembali ke Beranda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input">
+                <h2>Input Gambar</h2>
+                <div class="image-container">
+                    <img id="uploadedImage" src="#" alt="Uploaded Image">
+                    <input id="inputImage" type="file" id="inputImage" accept="image/*">
+                </div>
+            </div>
+            <div class="controls">
+                <div class="input-buttons">
+                    <button onclick="processImage()">Proses Gambar</button>
+                </div>
+            </div>
+            <div class="output">
+                <h2>Output Gambar</h2>
+                <canvas id="outputCanvas"></canvas>
+                <div class="output-buttons">
+                    <button onclick="downloadImage()">Unduh Gambar</button>
+                    <button onclick="clearOutput()">Clear</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="opencv.js" async></script>
+    <script src="negatif.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoshop Lite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EDIT ROOM ALLIED</h1>
+        <nav>
+            <ul>
+                <li><a href="resize.html" id="resizeBtn" onclick="switchFeature('resize')">Resize</a></li>
+                <li><a href="negatif.html" id="negativeBtn" onclick="switchFeature('negative')">Negatif</a></li>
+                <li><a href="perbaiki.html" id="fixImageBtn" onclick="switchFeature('enhance')">Perbaiki</a></li>
+                <li><a href="biner.html" id="binaryBtn" onclick="switchFeature('binary')">Biner</a></li>
+                <li><a href="tepi.html" id="edgeDetectBtn" onclick="switchFeature('edge')">Tepi</a></li>
+                <li><a href="objek.html" id="objectDetectBtn" onclick="switchFeature('object')">Objek</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Selamat Datang di EDIT ROOM ALLIED</h2>
+            <p>
+                EDIT ROOM ALLIED merupakan website pengeditan gambar ringan yang dirancang untuk memenuhi kebutuhan pengeditan gambar dasar Anda. Dengan antarmuka yang mudah digunakan dan fitur-fitur canggih, Anda dapat dengan cepat dan mudah melakukan berbagai jenis pengeditan gambar seperti:
+            </p>
+            <ul>
+                <li><a href="resize.html">Resize</a> - Ubah ukuran gambar sesuai keinginan Anda.</li>
+                <li><a href="negative.html">Negatif</a> - Ubah gambar menjadi citra negatif.</li>
+                <li><a href="enhance.html">Perbaiki</a> - Tingkatkan kualitas gambar.</li>
+                <li><a href="binary.html">Biner</a> - Konversi gambar menjadi biner dengan teknik thresholding.</li>
+                <li><a href="edge.html">Tepi</a> - Deteksi tepi pada gambar.</li>
+                <li><a href="object.html">Objek</a> - Deteksi objek pada gambar.</li>
+            </ul>
+            <p>
+                Pilih salah satu fitur di atas untuk memulai. Kami berharap Anda menikmati pengalaman menggunakan EDIT ROOM ALLIED dan dapat menyelesaikan pengeditan gambar Anda dengan mudah dan cepat.
+            </p>
+        </section>
+    </main>
+
+    <!-- <div class="container">
+        <div class="column">
+            <h2>Gambar Asli</h2>
+            <input type="file" id="inputImage" accept="image/*">
+            <br>
+            <canvas id="inputCanvas" width="400" height="300"></canvas>
+            <br>
+            <button onclick="processImage()">Proses Gambar</button>
+            <button onclick="downloadImage()">Simpan Gambar</button>
+            <button onclick="clearOutput()">Clear</button>
+        </div>
+        <div class="column">
+            <h2>Hasil Proses</h2>
+            <canvas id="outputCanvas" width="400" height="300"></canvas>
+        </div>
+    </div> -->
+
+    <script src="opencv.js" async></script>
+    <script src="script.js" defer></script>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 EDIT ROOM ALLIED.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Aldi Alfatih</a></li>
+                    <li><a href="#">Faruq Al-Fauzi S.</a></li>
+                    <li><a href="#">~Dicky Armansyah</a></li>
+                    <li><a href="#">Nirmalasari Rodito Sulnas</a></li>
+                    <li><a href="#">Nuriyyah Iffah</a></li>
+                    <li><a href="#">Bintang Zaky Zhafran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+</body>
+</html>
